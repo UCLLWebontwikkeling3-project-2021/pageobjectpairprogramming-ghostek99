@@ -22,6 +22,11 @@ public class HomePage extends Page {
         return error.getText();
     }
 
+    public String getWelcomeMessageAdmin() {
+        WebElement error = driver.findElement(By.id("welcome"));
+        return error.getText();
+    }
+
     public String getIncorrectLogOutMessage() {
         WebElement error = driver.findElement(By.cssSelector(".alert-danger ul li"));
         return error.getText();
