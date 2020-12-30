@@ -35,7 +35,7 @@ public class LoginPage extends Page {
 
     public HomePage loginAsUser() {
         setUsername("user");
-        setPassword("t");
+        setPassword("hehe");
         return confirm();
     }
 
@@ -46,7 +46,7 @@ public class LoginPage extends Page {
     }
 
     public void logInWithInCorrectCredentials() {
-        setUsername("admin");
+        setUsername("admins");
         setPassword("sdknfgoijshiofsiuo");
         WebElement logInButton = driver.findElement(By.id("logIn"));
         logInButton.click();

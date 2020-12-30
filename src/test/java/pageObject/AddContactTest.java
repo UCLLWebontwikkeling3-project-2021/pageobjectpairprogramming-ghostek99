@@ -56,7 +56,7 @@ public class AddContactTest {
         addContactPage.setEmail(randomId + "jan.janssens@hotmail.com");
         addContactPage.pressButton();
 
-        assertEquals("Contact successfully added", addContactPage.contactAdded().getText());
+        assertEquals("Contact successfully added!", addContactPage.contactAdded().getText());
     }
 
     @Test
